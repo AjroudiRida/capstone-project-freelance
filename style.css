@@ -38,15 +38,15 @@ header {
 }
 
 .header-body p:nth-child(2) {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 400;
-  line-height: 2.6rem;
+  line-height: 2.5rem;
   border: 0.3rem solid #fff;
   padding: 1rem;
 }
 
 .header-body p:nth-child(4) {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 400;
   line-height: 2.6rem;
 }
@@ -198,8 +198,6 @@ header {
   content: "";
   display: inline-block;
   margin-left: 1rem;
-
-  /* line-height: 3rem; */
   background-image: url("./assets/images/showmore.png");
   width: 1rem;
   height: 1rem;

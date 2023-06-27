@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  color: #272a31;
+}
+
+header {
+  background-image: url("./assets/images/header-background.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  padding: 2rem;
+}
+
+nav {
+  width: 100%;
+  position: relative;
+}
+
+nav .logo {
+
+  height: 5.1rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header-body h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 4.9rem;
+  color: #ec5242;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.header-body p:nth-child(2) {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  color: #272a31;
+  border: 0.1rem solid #c8c8c8;
+  padding: 2rem 1.2rem;
+  background-color: #fff;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.header-body p:nth-child(3) {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  color: #272a31;
+  margin-bottom: 2.5rem;
+}
+
+.header-body p:nth-child(3) span {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.logo-design {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.logo-design h2 {
+  color: #272a31;
+  font-weight: 700;
+  line-height: 2.8rem;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.logo-design hr {
+  border: 0.1rem solid #ec5242;
+  width: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.logo-design p {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2.1rem;
+  color: #838383;
+  margin-bottom: 3.5rem;
+  text-align: center;
+}
+
+.logo-design .item-logo {
+  width: 100%;
+  border: 0.1rem solid #c8c8c8;
+  padding: 2rem 3rem;
+  margin-bottom: 2rem;
+}
+
+.logo-design .item-logo img {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+}
+
+.last-courses {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  border-top: 0.1rem solid #c8c8c8;
+}
+
+.last-courses h2 {
+  color: #272a31;
+  font-weight: 700;
+  line-height: 2.8rem;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.last-courses hr {
+  border: 0.1rem solid #ec5242;
+  width: 3.5rem; 
+  margin-bottom: 1rem;
+}
+
+.last-courses > p {
+  color: #838383;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 2.1rem;
+  margin-bottom: 3.5rem;
+  text-align: center;
+}
+
+.last-courses .course {
+  width: 100%;
+  height: 20rem;
+  color: #fff;
+  margin-bottom: 2.5rem;
+}
+
+.last-courses .course:nth-child(4) {
+  background-image: url("./assets/images/React-Developer-Course.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.last-courses .course:nth-child(4) .layer {
+  background-color: rgba(255, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+}
+
+.last-courses .course:nth-child(5) {
+  background-image: url("./assets/images/React-Developer-Course.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.last-courses .course:nth-child(5) .layer {
+  background-color: rgba(255, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+}
+
+.last-courses .course .layer h3{
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 2.9rem;
+  margin-bottom: 2rem;
+}
+
+.last-courses .course .layer p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.partners {
+  background-color: #414246;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.partner-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.partner-list img {
+  height: 7.5rem;
+}
+
+.partners h2 {
+  color: #fff;
+  font-weight: 700;
+  line-height: 2.8rem;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.partners hr {
+  border: 0.1rem solid #ec5242;
+  width: 3.5rem; 
+  margin-bottom: 1rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.7rem 2.5rem;
+  align-items: center;
+}
+
+footer img {
+  height: 3.1rem;
+}
+
+footer p {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.3rem;
+  color: #3b3e45;
+}
