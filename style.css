@@ -21,6 +21,14 @@ header {
   padding: 2rem;
 }
 
+.topbar {
+  display: none;
+}
+
+.menu-desktop {
+  display: none;
+}
+
 nav {
   width: 100%;
   position: relative;
@@ -71,7 +79,7 @@ nav {
 }
 
 nav .logo {
-
+  display: inline-block;
   height: 5.1rem;
   position: absolute;
   left: 50%;
@@ -153,6 +161,8 @@ nav .logo {
   margin: 3.5rem 0;
 }
 
+
+
 .modules {
   background-color: rgba(59, 62, 69, 0.7);
   display: flex;
@@ -161,6 +171,7 @@ nav .logo {
   padding: 2rem;
   justify-content: space-between;
   column-gap: 2rem;
+  margin-bottom: 1rem;
 }
 
 .modules h3 {
@@ -180,6 +191,7 @@ nav .logo {
 .team {
   display: flex;
   column-gap: 2rem;
+  margin-bottom: 3rem;
 }
 
 .team .item-left {
@@ -261,4 +273,220 @@ nav .logo {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.partners {
+  display: none;
+}
+
+footer {
+  display: none;
+}
+
+@media screen and (min-width: 768px){
+
+  header {
+    padding: 0;
+  }
+
+  .header-body {
+    padding: 11.6rem 18%;
+  }
+
+  .header-body p {
+    width: 70%;
+  }
+
+  .header-body h1 {
+    font-size: 6rem;
+    font-weight: 900;
+    line-height: 6.5rem;
+  }
+
+  #hamburger {
+    display: none;
+  }
+
+  .menu-container {
+    display: none;
+  }
+
+  .topbar {
+    display: block;
+    padding: 0 17%;
+    background-color: #3B3E45;
+  }
+
+  .topbar ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+  }
+
+  .topbar ul li a{
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-decoration: none;
+  }
+
+  .topbar ul li {
+    padding: 1rem;
+  }
+
+  .topbar ul li img {
+    height: 1.8rem;
+  }
+
+  nav .logo {
+    position: static;
+    display: none;
+  }
+
+
+  .menu-desktop {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.35rem 18%;
+  }
+  
+
+  .menu-desktop ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    column-gap: 6.5rem;
+    flex-wrap: wrap;
+  }
+
+  .menu-desktop ul li a {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #868686;
+    text-decoration: none;
+  }
+
+  .menu-desktop ul li {
+    padding: 1.4rem;
+  }
+
+  .menu-desktop ul li:nth-child(6) {
+    border: 0.4rem solid #EC4327;
+  }
+
+  .menu-desktop ul li:nth-child(6) a {
+    color: #EC4327;
+  }
+
+  .menu-desktop ul li:nth-child(1) a {
+    color: #EC4327;
+  }
+
+  .menu-desktop .logo-desktop {
+    height: 5.1rem;
+  }
+
+  .modules-container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.5rem;
+  }
+
+  .modules {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+  }
+
+  .modules p {
+    text-align: center;
+  }
+
+  .main-program a {
+    color: #fff;
+    text-decoration: underline;
+    padding: 0;
+    background-color: transparent;
+  }
+  
+  .main-program {
+    padding: 0 18% 2rem 18%;
+  }
+
+  .teams {
+    padding: 0 18%;
+  }
+
+  .teamAllContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    justify-content: center;
+  }
+
+  .team {
+    flex-basis: 45%;
+  }
+
+  .teams a {
+    display: none;
+  }
+
+  .partners {
+    background-color: #414246;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 18%;
+  }
+  
+  .partner-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5.5rem;
+  }
+  
+  .partner-list img {
+    height: 10rem;
+  }
+  
+  .partners h2 {
+    color: #fff;
+    font-weight: 700;
+    line-height: 2.8rem;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .partners hr {
+    border: 0.1rem solid #ec5242;
+    width: 3.5rem; 
+    margin-bottom: 3rem;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 4.7rem 18%;
+    align-items: center;
+    column-gap: 8rem;
+  }
+  
+  footer img {
+    height: 5.1rem;
+  }
+  
+  footer p {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2.8rem;
+    color: #272a31;
+    margin-bottom: 1rem;
+  }
+
 }

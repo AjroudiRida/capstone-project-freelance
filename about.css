@@ -21,6 +21,15 @@ header {
   padding: 2rem;
 }
 
+.topbar {
+  display: none;
+}
+
+.menu-desktop {
+  display: none;
+}
+
+
 nav {
   width: 100%;
   position: relative;
@@ -36,6 +45,10 @@ nav .logo {
 
 .menu {
   list-style: none;
+}
+
+.header-body hr {
+  display: none;
 }
 
 #hamburger {
@@ -66,9 +79,6 @@ nav .logo {
   top: 10rem;
 }
 
-.menu {
-  list-style: none;
-}
 
 .menu li a {
   text-decoration: none;
@@ -93,7 +103,7 @@ nav .logo {
   text-align: center;
 }
 
-.header-body p:nth-child(2) {
+.header-body p:nth-child(3) {
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 2.5rem;
@@ -105,7 +115,7 @@ nav .logo {
   margin-bottom: 2.5rem;
 }
 
-.header-body p:nth-child(3) {
+.header-body p:nth-child(4) {
   text-align: center;
   font-size: 1.4rem;
   font-weight: 400;
@@ -204,14 +214,14 @@ nav .logo {
   margin-bottom: 2.5rem;
 }
 
-.last-courses .course:nth-child(4) {
+.last-courses .course-container .course{
   background-image: url("./assets/images/React-Developer-Course.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.last-courses .course:nth-child(4) .layer {
+.last-courses .course .layer {
   background-color: rgba(255, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
@@ -220,21 +230,6 @@ nav .logo {
   height: 20rem;
 }
 
-.last-courses .course:nth-child(5) {
-  background-image: url("./assets/images/React-Developer-Course.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.last-courses .course:nth-child(5) .layer {
-  background-color: rgba(255, 0, 0, 0.5);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 20rem;
-}
 
 .last-courses .course .layer h3{
   font-size: 2.5rem;
@@ -290,17 +285,211 @@ nav .logo {
 footer {
   display: flex;
   justify-content: space-between;
-  padding: 2.7rem 2.5rem;
+  padding: 2rem 18%;
   align-items: center;
 }
 
-footer img {
+footer .light {
   height: 3.1rem;
+  display: block;
+}
+
+footer .dark {
+  display: none;
 }
 
 footer p {
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.3rem;
-  color: #3b3e45;
+  color: #272a31;
+}
+
+.copyright p:nth-child(2) {
+  display: none;
+}
+
+@media screen and (min-width: 768px){
+  header {
+    padding: 0;
+  }
+
+  .header-body {
+    padding: 11.6rem 18%;
+  }
+
+  .header-body p {
+    width: 70%;
+  }
+
+  .header-body h1 {
+    font-size: 5rem;
+    font-weight: 900;
+    line-height: 5.5rem;
+    margin: 0;
+  }
+
+  #hamburger {
+    display: none;
+  }
+
+  .menu-container {
+    display: none;
+  }
+
+  .topbar {
+    display: block;
+    padding: 0 17%;
+    background-color: #3B3E45;
+  }
+
+  .topbar ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+  }
+
+  .topbar ul li a{
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-decoration: none;
+  }
+
+  .topbar ul li {
+    padding: 1rem;
+  }
+
+  .topbar ul li img {
+    height: 1.8rem;
+  }
+
+  nav .logo {
+    position: static;
+    display: none;
+  }
+
+
+  .menu-desktop {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.35rem 18%;
+  }
+  
+
+  .menu-desktop ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    column-gap: 6.5rem;
+    flex-wrap: wrap;
+  }
+
+  .menu-desktop ul li a {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #868686;
+    text-decoration: none;
+  }
+
+  .menu-desktop ul li {
+    padding: 1.4rem;
+  }
+
+  .menu-desktop ul li:nth-child(6) {
+    border: 0.4rem solid #EC4327;
+  }
+
+  .menu-desktop ul li:nth-child(6) a {
+    color: #EC4327;
+  }
+
+  .menu-desktop ul li:nth-child(1) a {
+    color: #EC4327;
+  }
+
+  .menu-desktop .logo-desktop {
+    height: 5.1rem;
+  }
+
+  .header-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-body hr {
+    display: block;
+    border: 0.1rem solid #ec5242;
+    width: 3.5rem;
+    margin: 3.5rem 0;
+  }
+
+  .header-body p {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+  }
+
+  .header-body p:nth-child(3) {
+    border: 0.1rem solid #c8c8c8;
+    background-color: #fff;
+    padding: 3.5rem 6.5rem;
+  }
+
+  .logo-design h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 2.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .logo-design .item-logo {
+    width: 54.2rem;
+  }
+
+  .course-container {
+    display: flex;
+    justify-content: center;
+    column-gap: 2.5rem;
+  }
+
+  .last-courses {
+    padding: 2rem 18%;
+  }
+
+  .partners {
+    display: none;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 7.4rem 18%;
+    align-items: center;
+    column-gap: 8rem;
+    background-color: #2E2E2E;
+  }
+  
+  footer .dark {
+    height: 5.1rem;
+    display: block;
+  }
+
+  footer .light {
+    display: none;
+  }
+  
+  footer p {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2.8rem;
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+
+  .copyright p:nth-child(2) {
+    display: block;
+  }
 }

@@ -23,6 +23,18 @@ let teams  = {
     name: "Emma Johnson",
     heading: "Ecommerce expert driving growth through strategic marketing and customer-centric solutions.",
     subheading: "Experienced Shopify specialist driving growth through strategic marketing, customer-centric solutions, and a deep understanding of the ecommerce landscape."
+  },
+  team3: {
+    img: "./assets/images/team3.jpeg",
+    name: "Amelia Rose Parker",
+    heading: "HTML and CSS Guru: Mastering the Art of Web Design and Styling",
+    subheading: "Whether it's designing intuitive user interfaces or optimizing website performance, Amelia's dedication and proficiency make him an invaluable asset in the world of web development."
+  },
+  team4: {
+    img: "./assets/images/team4.jpeg",
+    name: "Benjamin James Anderson",
+    heading: "A skilled and dedicated individual with a solid background in web development.",
+    subheading: "With years of experience in the industry, Anderson possesses a comprehensive understanding of HTML, CSS, JavaScript, and other essential web technologies."
   }
 }
 
@@ -34,7 +46,21 @@ window.addEventListener("load", () => {
     const teamKeys = Object.keys(JSON.parse(localStorage.getItem("teams")));
     const teamValues = Object.values(JSON.parse(localStorage.getItem("teams")));
     const target = document.querySelector(".teams-header");
-    for (let i = 0; i < teamKeys.length; i += 1)
+    let teamAllContainer = document.createElement("div");
+    teamAllContainer.setAttribute("class", "teamAllContainer");
+    let n = 0;
+    if (window.innerWidth <= 768)
+    {
+      n = teamKeys.length/2;
+    }
+    else if (window.innerWidth > 768)
+    {
+      n = teamKeys.length
+    }
+
+    console.log(n);
+
+    for (let i = 0; i < n; i += 1)
     {
       if (Object.prototype.hasOwnProperty.call(teamValues, i))
       {
@@ -56,7 +82,10 @@ window.addEventListener("load", () => {
           let teamContainer = document.createElement("div");
           teamContainer.setAttribute("class", "team");
           teamContainer.innerHTML = team;
-          target.insertAdjacentElement("afterend", teamContainer);
+          teamAllContainer.appendChild(teamContainer);
+          target.insertAdjacentElement("afterend", teamAllContainer);
+         
+
   
       }
     }
