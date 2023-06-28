@@ -29,14 +29,12 @@ header {
   display: none;
 }
 
-
 nav {
   width: 100%;
   position: relative;
 }
 
 nav .logo {
-
   height: 5.1rem;
   position: absolute;
   left: 50%;
@@ -79,7 +77,6 @@ nav .logo {
   top: 10rem;
 }
 
-
 .menu li a {
   text-decoration: none;
   color: #272a31;
@@ -100,6 +97,31 @@ nav .logo {
   color: #ec5242;
   margin-top: 5rem;
   margin-bottom: 2rem;
+  text-align: center;
+}
+
+footer p {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.3rem;
+  color: #272a31;
+}
+
+.logo-design p {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2.1rem;
+  color: #838383;
+  margin-bottom: 3.5rem;
+  text-align: center;
+}
+
+.last-courses > p {
+  color: #838383;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 2.1rem;
+  margin-bottom: 3.5rem;
   text-align: center;
 }
 
@@ -152,20 +174,15 @@ nav .logo {
   margin-bottom: 1rem;
 }
 
-.logo-design p {
-  font-size: 1.6rem;
-  font-weight: 700;
-  line-height: 2.1rem;
-  color: #838383;
-  margin-bottom: 3.5rem;
-  text-align: center;
-}
-
 .logo-design .item-logo {
   width: 100%;
   border: 0.1rem solid #c8c8c8;
   padding: 2rem 3rem;
   margin-bottom: 2rem;
+}
+
+.partner-list img {
+  height: 7.5rem;
 }
 
 .logo-design .item-logo img {
@@ -194,17 +211,8 @@ nav .logo {
 
 .last-courses hr {
   border: 0.1rem solid #ec5242;
-  width: 3.5rem; 
+  width: 3.5rem;
   margin-bottom: 1rem;
-}
-
-.last-courses > p {
-  color: #838383;
-  font-size: 1.2rem;
-  font-weight: 700;
-  line-height: 2.1rem;
-  margin-bottom: 3.5rem;
-  text-align: center;
 }
 
 .last-courses .course {
@@ -214,7 +222,7 @@ nav .logo {
   margin-bottom: 2.5rem;
 }
 
-.last-courses .course-container .course{
+.last-courses .course-container .course {
   background-image: url("./assets/images/React-Developer-Course.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -230,12 +238,15 @@ nav .logo {
   height: 20rem;
 }
 
-
-.last-courses .course .layer h3{
+.last-courses .course .layer h3 {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 2.9rem;
   margin-bottom: 2rem;
+}
+
+.copyright p:nth-child(2) {
+  display: none;
 }
 
 .last-courses .course .layer p {
@@ -262,10 +273,6 @@ nav .logo {
   gap: 2rem;
 }
 
-.partner-list img {
-  height: 7.5rem;
-}
-
 .partners h2 {
   color: #fff;
   font-weight: 700;
@@ -278,7 +285,7 @@ nav .logo {
 
 .partners hr {
   border: 0.1rem solid #ec5242;
-  width: 3.5rem; 
+  width: 3.5rem;
   margin-bottom: 1rem;
 }
 
@@ -298,28 +305,32 @@ footer .dark {
   display: none;
 }
 
-footer p {
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 1.3rem;
-  color: #272a31;
-}
-
-.copyright p:nth-child(2) {
-  display: none;
-}
-
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   header {
     padding: 0;
   }
 
   .header-body {
     padding: 11.6rem 18%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer p {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2.8rem;
+    color: #fff;
+    margin-bottom: 1rem;
   }
 
   .header-body p {
     width: 70%;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.5rem;
   }
 
   .header-body h1 {
@@ -340,16 +351,16 @@ footer p {
   .topbar {
     display: block;
     padding: 0 17%;
-    background-color: #3B3E45;
+    background-color: #3b3e45;
   }
 
-  .topbar ul{
+  .topbar ul {
     display: flex;
     justify-content: flex-end;
     list-style: none;
   }
 
-  .topbar ul li a{
+  .topbar ul li a {
     color: #fff;
     font-size: 1.2rem;
     font-weight: 400;
@@ -364,25 +375,26 @@ footer p {
     height: 1.8rem;
   }
 
+  nav {
+    overflow: hidden;
+  }
+
   nav .logo {
     position: static;
     display: none;
   }
-
 
   .menu-desktop {
     display: flex;
     justify-content: space-between;
     padding: 1.35rem 18%;
   }
-  
 
   .menu-desktop ul {
     display: flex;
     justify-content: flex-end;
     list-style: none;
     column-gap: 6.5rem;
-    flex-wrap: wrap;
   }
 
   .menu-desktop ul li a {
@@ -397,25 +409,19 @@ footer p {
   }
 
   .menu-desktop ul li:nth-child(6) {
-    border: 0.4rem solid #EC4327;
+    border: 0.4rem solid #ec4327;
   }
 
   .menu-desktop ul li:nth-child(6) a {
-    color: #EC4327;
+    color: #ec4327;
   }
 
   .menu-desktop ul li:nth-child(1) a {
-    color: #EC4327;
+    color: #ec4327;
   }
 
   .menu-desktop .logo-desktop {
     height: 5.1rem;
-  }
-
-  .header-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 
   .header-body hr {
@@ -425,17 +431,10 @@ footer p {
     margin: 3.5rem 0;
   }
 
-  .header-body p {
-    text-align: center;
-    font-size: 1.4rem;
-    font-weight: 400;
-    line-height: 2.5rem;
-  }
-
   .header-body p:nth-child(3) {
     border: 0.1rem solid #c8c8c8;
     background-color: #fff;
-    padding: 3.5rem 6.5rem;
+    padding: 3%;
   }
 
   .logo-design h2 {
@@ -469,9 +468,9 @@ footer p {
     padding: 7.4rem 18%;
     align-items: center;
     column-gap: 8rem;
-    background-color: #2E2E2E;
+    background-color: #2e2e2e;
   }
-  
+
   footer .dark {
     height: 5.1rem;
     display: block;
@@ -479,14 +478,6 @@ footer p {
 
   footer .light {
     display: none;
-  }
-  
-  footer p {
-    font-size: 1.4rem;
-    font-weight: 700;
-    line-height: 2.8rem;
-    color: #fff;
-    margin-bottom: 1rem;
   }
 
   .copyright p:nth-child(2) {
