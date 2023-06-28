@@ -47,7 +47,7 @@ const teams = {
     name: 'Benjamin James Anderson',
     heading: 'A skilled and dedicated individual with a solid background in web development.',
     subheading: 'With years of experience in the industry, Anderson possesses a comprehensive understanding of HTML, CSS, JavaScript, and other essential web technologies.',
-  }
+  },
 };
 
 const { localStorage } = window;
