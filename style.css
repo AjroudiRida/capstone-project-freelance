@@ -108,23 +108,35 @@ nav .logo {
   transform: translateX(-50%);
 }
 
+.header-body {
+  padding: 10.9rem 0 7.1rem 0;
+}
+
 .header-body h1 {
   font-size: 3.5rem;
   font-weight: 900;
   text-transform: uppercase;
   line-height: 4.9rem;
   color: #ec5242;
-  margin-top: 5rem;
+  margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.header-body h3 {
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  color: #ec5242;
 }
 
 .modules p {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.5rem;
+  text-align: center;
 }
 
-.header-body p:nth-child(2) {
+.header-body p:nth-child(3) {
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 2.5rem;
@@ -132,11 +144,12 @@ nav .logo {
   padding: 1rem;
 }
 
-.header-body p:nth-child(4) {
+.header-body p:nth-child(5) {
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 2.6rem;
 }
+
 
 .header-body h2 {
   color: #272a31;
@@ -183,12 +196,18 @@ nav .logo {
   justify-content: space-between;
   column-gap: 2rem;
   margin-bottom: 1rem;
+  flex-basis: 20rem;
+}
+
+.modules:hover {
+  border: 0.2rem solid #fff;
 }
 
 .modules h3 {
   font-size: 2.2rem;
   font-weight: 500;
   color: #ec5242;
+  text-align: center;
 }
 
 .teams {
@@ -287,7 +306,7 @@ footer {
   }
 
   .header-body {
-    padding: 11.6rem 18%;
+    padding: 11.6rem 14%;
   }
 
   footer p {
@@ -308,6 +327,13 @@ footer {
     line-height: 6.5rem;
   }
 
+  .header-body h3 {
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    color: #ec5242;
+  }
+
   #hamburger {
     display: none;
   }
@@ -318,7 +344,7 @@ footer {
 
   .topbar {
     display: block;
-    padding: 0 17%;
+    padding: 0 13%;
     background-color: #3b3e45;
   }
 
@@ -348,6 +374,8 @@ footer {
 
   .topbar ul li {
     padding: 1rem;
+    display: flex;
+    align-items: center;
   }
 
   footer img {
@@ -374,16 +402,18 @@ footer {
   .menu-desktop {
     display: flex;
     justify-content: space-between;
-    padding: 1.35rem 18%;
+    padding: 1.35rem 14%;
+    background-color: #fff;
   }
 
   .menu-desktop ul {
     display: flex;
     justify-content: flex-end;
     list-style: none;
-    column-gap: 6.5rem;
+    column-gap: 4rem;
     flex-shrink: 2;
   }
+  
 
   .menu-desktop ul li a {
     font-size: 1.5rem;
@@ -394,6 +424,8 @@ footer {
 
   .menu-desktop ul li {
     padding: 1.4rem;
+    display: flex;
+    align-items: center;
   }
 
   .menu-desktop ul li:nth-child(6) {
@@ -412,10 +444,12 @@ footer {
     height: 5.1rem;
   }
 
+
   .modules-container {
     display: flex;
     flex-direction: row;
     column-gap: 0.5rem;
+    justify-content: center;
   }
 
   .modules {
@@ -425,16 +459,20 @@ footer {
     row-gap: 1rem;
   }
 
+  .modules:hover {
+    border: 0.2rem solid #fff;
+  }
+
   .modules p {
     text-align: center;
   }
 
   .main-program {
-    padding: 0 18% 2rem 18%;
+    padding: 0 14% 2rem 14%;
   }
 
   .teams {
-    padding: 0 18%;
+    padding: 0 14%;
   }
 
   .teamAllContainer {
@@ -455,7 +493,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 4rem 18%;
+    padding: 4rem 14%;
   }
 
   .partner-list {
@@ -483,7 +521,7 @@ footer {
   footer {
     display: flex;
     justify-content: space-between;
-    padding: 4.7rem 18%;
+    padding: 4.7rem 14%;
     align-items: center;
     column-gap: 8rem;
   }

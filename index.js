@@ -36,6 +36,18 @@ const teams = {
     heading: 'A skilled and dedicated individual with a solid background in web development.',
     subheading: 'With years of experience in the industry, Anderson possesses a comprehensive understanding of HTML, CSS, JavaScript, and other essential web technologies.',
   },
+  team5: {
+    img: './assets/images/team3.jpeg',
+    name: 'Amelia Rose Parker',
+    heading: 'HTML and CSS Guru: Mastering the Art of Web Design and Styling',
+    subheading: "Whether it's designing intuitive user interfaces or optimizing website performance, Amelia's dedication and proficiency make him an invaluable asset in the world of web development.",
+  },
+  team6: {
+    img: './assets/images/team4.jpeg',
+    name: 'Benjamin James Anderson',
+    heading: 'A skilled and dedicated individual with a solid background in web development.',
+    subheading: 'With years of experience in the industry, Anderson possesses a comprehensive understanding of HTML, CSS, JavaScript, and other essential web technologies.',
+  }
 };
 
 const { localStorage } = window;
