@@ -13,37 +13,37 @@ closeMenu.addEventListener('click', () => {
 
 const teams = {
   team1: {
-    img: './assets/images/team1.jpeg',
+    img: './assets/images/team1.png',
     name: 'Daniel Thompson',
     heading: 'A Tech Savvy Professional with a Diverse Skill Set and a Passion for Innovative Solutions.',
     subheading: 'With a wealth of experience in the tech industry, Daniel Thompson stands out as a seasoned expert in various programming languages and frameworks.',
   },
   team2: {
-    img: './assets/images/team2.jpeg',
+    img: './assets/images/team2.png',
     name: 'Emma Johnson',
     heading: 'Ecommerce expert driving growth through strategic marketing and customer-centric solutions.',
     subheading: 'Experienced Shopify specialist driving growth through strategic marketing, customer-centric solutions, and a deep understanding of the ecommerce landscape.',
   },
   team3: {
-    img: './assets/images/team3.jpeg',
+    img: './assets/images/team3.png',
     name: 'Amelia Rose Parker',
     heading: 'HTML and CSS Guru: Mastering the Art of Web Design and Styling',
     subheading: "Whether it's designing intuitive user interfaces or optimizing website performance, Amelia's dedication and proficiency make him an invaluable asset in the world of web development.",
   },
   team4: {
-    img: './assets/images/team4.jpeg',
+    img: './assets/images/team4.png',
     name: 'Benjamin James Anderson',
     heading: 'A skilled and dedicated individual with a solid background in web development.',
     subheading: 'With years of experience in the industry, Anderson possesses a comprehensive understanding of HTML, CSS, JavaScript, and other essential web technologies.',
   },
   team5: {
-    img: './assets/images/team3.jpeg',
+    img: './assets/images/team3.png',
     name: 'Amelia Rose Parker',
     heading: 'HTML and CSS Guru: Mastering the Art of Web Design and Styling',
     subheading: "Whether it's designing intuitive user interfaces or optimizing website performance, Amelia's dedication and proficiency make him an invaluable asset in the world of web development.",
   },
   team6: {
-    img: './assets/images/team4.jpeg',
+    img: './assets/images/team4.png',
     name: 'Benjamin James Anderson',
     heading: 'A skilled and dedicated individual with a solid background in web development.',
     subheading: 'With years of experience in the industry, Anderson possesses a comprehensive understanding of HTML, CSS, JavaScript, and other essential web technologies.',

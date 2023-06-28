@@ -150,7 +150,6 @@ nav .logo {
   line-height: 2.6rem;
 }
 
-
 .header-body h2 {
   color: #272a31;
   font-size: 3rem;
@@ -413,7 +412,7 @@ footer {
     column-gap: 4rem;
     flex-shrink: 2;
   }
-  
+
 
   .menu-desktop ul li a {
     font-size: 1.5rem;
@@ -443,7 +442,6 @@ footer {
   .menu-desktop .logo-desktop {
     height: 5.1rem;
   }
-
 
   .modules-container {
     display: flex;
