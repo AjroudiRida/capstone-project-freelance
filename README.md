@@ -120,7 +120,7 @@ To run tests, run the following command:
 
 ### Deployment
 
-ou can deploy this project using: any web hosting provider such as neamcheap, godaddy or Github pages (## Free).
+you can deploy this project using: any web hosting provider such as neamcheap, godaddy or Github pages (Free).
 
 <!--
 Example:
