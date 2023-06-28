@@ -56,6 +56,7 @@ For more information on the importance of a professional README for your reposit
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
+- [🧑‍🎨Credit](#credit) 
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
@@ -172,7 +173,14 @@ I'd like to thank Microverse for this opportunity, as well as my coding partners
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- Credit-->
 
+## 🧑‍🎨 Credit <a name="credit"></a>
+
+
+Credit to Behance designer Cindy Shin for her exceptional design work. Her <a href="https://www.behance.net/adagio07">portfolio</a> showcases a range of impressive projects, demonstrating her creativity and talent.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
 
