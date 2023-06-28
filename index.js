@@ -50,7 +50,7 @@ window.addEventListener('load', () => {
     teamAllContainer.setAttribute('class', 'teamAllContainer');
     let n = 0;
     if (window.innerWidth <= 768) {
-      n = teamKeys.length / 2;
+      n = 2;
     } else if (window.innerWidth > 768) {
       n = teamKeys.length;
     }
