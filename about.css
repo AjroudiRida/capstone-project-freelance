@@ -1,0 +1,501 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  color: #272a31;
+}
+
+header {
+  background-image: url("./assets/images/header-background.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  padding: 2rem;
+}
+
+.topbar {
+  display: none;
+}
+
+.menu-desktop {
+  display: none;
+}
+
+nav {
+  width: 100%;
+  position: relative;
+}
+
+nav .logo {
+  height: 5.1rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.menu {
+  list-style: none;
+}
+
+.header-body hr {
+  display: none;
+}
+
+#hamburger {
+  cursor: pointer;
+}
+
+.menu-container {
+  visibility: hidden;
+  background-color: #fff;
+  position: absolute;
+  top: -100rem;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  border-radius: 1rem;
+  transition: all 0.5s;
+  display: flex;
+  justify-content: space-between;
+}
+
+.close-menu {
+  align-self: self-start;
+  cursor: pointer;
+}
+
+.showMenu {
+  visibility: visible;
+  top: 10rem;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #272a31;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+}
+
+.menu li {
+  padding: 1rem 0;
+}
+
+.header-body h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 4.9rem;
+  color: #ec5242;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+footer p {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.3rem;
+  color: #272a31;
+}
+
+.logo-design p {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2.1rem;
+  color: #838383;
+  margin-bottom: 3.5rem;
+  text-align: center;
+}
+
+.last-courses > p {
+  color: #838383;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 2.1rem;
+  margin-bottom: 3.5rem;
+  text-align: center;
+}
+
+.header-body p:nth-child(3) {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  color: #272a31;
+  border: 0.1rem solid #c8c8c8;
+  padding: 2rem 1.2rem;
+  background-color: #fff;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.header-body p:nth-child(4) {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  color: #272a31;
+  margin-bottom: 2.5rem;
+}
+
+.header-body p:nth-child(4) span {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.header-body p:nth-child(3) span {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.logo-design {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.logo-design h2 {
+  color: #272a31;
+  font-weight: 700;
+  line-height: 2.8rem;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.logo-design hr {
+  border: 0.1rem solid #ec5242;
+  width: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.logo-design .item-logo {
+  width: 100%;
+  border: 0.1rem solid #c8c8c8;
+  padding: 2rem 3rem;
+  margin-bottom: 2rem;
+}
+
+.partner-list img {
+  height: 7.5rem;
+}
+
+.logo-design .item-logo img {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+}
+
+.last-courses {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  border-top: 0.1rem solid #c8c8c8;
+}
+
+.last-courses h2 {
+  color: #272a31;
+  font-weight: 700;
+  line-height: 2.8rem;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.last-courses hr {
+  border: 0.1rem solid #ec5242;
+  width: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.last-courses .course {
+  width: 100%;
+  height: 20rem;
+  color: #fff;
+  margin-bottom: 2.5rem;
+}
+
+.last-courses .course-container .course {
+  background-image: url("./assets/images/React-Developer-Course.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.last-courses .course .layer {
+  background-color: rgba(255, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+}
+
+.last-courses .course .layer h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 2.9rem;
+  margin-bottom: 2rem;
+}
+
+.copyright p:nth-child(2) {
+  display: none;
+}
+
+.last-courses .course .layer p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.partners {
+  background-color: #414246;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.partner-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.partners h2 {
+  color: #fff;
+  font-weight: 700;
+  line-height: 2.8rem;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.partners hr {
+  border: 0.1rem solid #ec5242;
+  width: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 14%;
+  align-items: center;
+}
+
+footer .light {
+  height: 3.1rem;
+  display: block;
+}
+
+footer .dark {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    padding: 0;
+  }
+
+  .header-body {
+    padding: 11.6rem 14%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer p {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2.8rem;
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+
+  .header-body p {
+    width: 70%;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+  }
+
+  .header-body p:nth-child(4) span {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  .header-body h1 {
+    font-size: 5rem;
+    font-weight: 900;
+    line-height: 5.5rem;
+    margin: 0;
+  }
+
+  #hamburger {
+    display: none;
+  }
+
+  .menu-container {
+    display: none;
+  }
+
+  .topbar {
+    display: block;
+    padding: 0 13%;
+    background-color: #3b3e45;
+  }
+
+  .topbar ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+  }
+
+  .topbar ul li a {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-decoration: none;
+  }
+
+  .topbar ul li {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .topbar ul li img {
+    height: 1.8rem;
+  }
+
+  nav {
+    overflow: hidden;
+  }
+
+  nav .logo {
+    position: static;
+    display: none;
+  }
+
+  .menu-desktop {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.35rem 14%;
+    background-color: #fff;
+  }
+
+  .menu-desktop ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    column-gap: 4rem;
+  }
+
+  .menu-desktop ul li a {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #868686;
+    text-decoration: none;
+  }
+
+  .menu-desktop ul li {
+    padding: 1.4rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .menu-desktop ul li:nth-child(6) {
+    border: 0.4rem solid #ec4327;
+  }
+
+  .menu-desktop ul li:nth-child(6) a {
+    color: #ec4327;
+  }
+
+  .menu-desktop ul li:nth-child(1) a {
+    color: #ec4327;
+  }
+
+  .menu-desktop .logo-desktop {
+    height: 5.1rem;
+  }
+
+  .header-body hr {
+    display: block;
+    border: 0.1rem solid #ec5242;
+    width: 3.5rem;
+    margin: 3.5rem 0;
+  }
+
+  .header-body p:nth-child(3) {
+    border: 0.1rem solid #c8c8c8;
+    background-color: #fff;
+    padding: 3%;
+  }
+
+  .logo-design h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 2.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .logo-design .item-logo {
+    width: 54.2rem;
+  }
+
+  .course-container {
+    display: flex;
+    justify-content: center;
+    column-gap: 2.5rem;
+  }
+
+  .last-courses {
+    padding: 2rem 14%;
+  }
+
+  .partners {
+    display: none;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 7.4rem 14%;
+    align-items: center;
+    column-gap: 8rem;
+    background-color: #2e2e2e;
+  }
+
+  footer .dark {
+    height: 5.1rem;
+    display: block;
+  }
+
+  footer .light {
+    display: none;
+  }
+
+  .copyright p:nth-child(2) {
+    display: block;
+  }
+}

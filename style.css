@@ -1,0 +1,525 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  color: #272a31;
+}
+
+header {
+  background-image: url("./assets/images/header-background.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  padding: 2rem;
+}
+
+.topbar {
+  display: none;
+}
+
+.menu-desktop {
+  display: none;
+}
+
+nav {
+  width: 100%;
+  position: relative;
+}
+
+.menu {
+  list-style: none;
+}
+
+#hamburger {
+  cursor: pointer;
+}
+
+.menu-container {
+  visibility: hidden;
+  background-color: #fff;
+  position: absolute;
+  top: -100rem;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  border-radius: 1rem;
+  transition: all 0.5s;
+  display: flex;
+  justify-content: space-between;
+}
+
+.close-menu {
+  align-self: self-start;
+  cursor: pointer;
+}
+
+.showMenu {
+  visibility: visible;
+  top: 10rem;
+}
+
+.main-program a {
+  color: #fff;
+  font-size: 1.7rem;
+  text-decoration: none;
+  background-color: #ec5242;
+  padding: 3rem 4rem;
+  margin: 3.5rem 0;
+}
+
+.teams a {
+  border: 0.1rem solid #c5c5c5;
+  padding: 2rem 0;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  color: #272a31;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #272a31;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+}
+
+.menu li {
+  padding: 1rem 0;
+}
+
+nav .logo {
+  display: inline-block;
+  height: 5.1rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header-body {
+  padding: 10.9rem 0 7.1rem 0;
+}
+
+.header-body h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 4.9rem;
+  color: #ec5242;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.header-body h3 {
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  color: #ec5242;
+}
+
+.modules p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  text-align: center;
+}
+
+.header-body p:nth-child(3) {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  border: 0.3rem solid #fff;
+  padding: 1rem;
+}
+
+.header-body p:nth-child(5) {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+}
+
+.header-body h2 {
+  color: #272a31;
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 3rem;
+  text-transform: uppercase;
+  margin: 3rem 0 2rem 0;
+}
+
+.main-program {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+  padding: 0 2rem;
+  background-color: #272a31;
+  background-image: url("./assets/images/program-background.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+
+.main-program h2 {
+  color: #fff;
+  font-size: 2.7rem;
+  font-weight: 700;
+  line-height: 3.5rem;
+  margin-top: 3.5rem;
+}
+
+.main-program hr {
+  border: 0.1rem solid #ec5242;
+  width: 4rem;
+  margin-bottom: 4rem;
+}
+
+.modules {
+  background-color: rgba(59, 62, 69, 0.7);
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding: 2rem;
+  justify-content: space-between;
+  column-gap: 2rem;
+  margin-bottom: 1rem;
+  flex-basis: 20rem;
+}
+
+.modules:hover {
+  border: 0.2rem solid #fff;
+}
+
+.modules h3 {
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: #ec5242;
+  text-align: center;
+}
+
+.teams {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2rem;
+  row-gap: 3rem;
+}
+
+.team {
+  display: flex;
+  column-gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.team .item-left {
+  flex-basis: 30%;
+}
+
+.team .item-right {
+  flex-basis: 70%;
+}
+
+.team .item-left img {
+  width: 100%;
+}
+
+.teams-header h2 {
+  font-size: 2.4rem;
+  color: #272a31;
+  line-height: 2.6rem;
+  font-weight: 700;
+  margin-top: 3rem;
+}
+
+.teams-header hr {
+  border: 0.1rem solid #ec5242;
+  width: 3.5rem;
+  margin: 1rem auto 0 auto;
+}
+
+.team .item-right h3 {
+  color: #272a31;
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 2.6rem;
+  margin-bottom: 1rem;
+}
+
+.team .item-right p:nth-child(2) {
+  color: #ec5242;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.team .item-right hr {
+  border: 0.1rem solid #c5c5c5;
+  width: 2rem;
+  margin-bottom: 1rem;
+}
+
+.team .item-right p:nth-child(4) {
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  color: #272a31;
+}
+
+.teams a::after {
+  content: "";
+  display: inline-block;
+  margin-left: 1rem;
+  background-image: url("./assets/images/showmore.png");
+  width: 1rem;
+  height: 1rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.partners {
+  display: none;
+}
+
+footer {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    padding: 0;
+  }
+
+  .header-body {
+    padding: 11.6rem 14%;
+  }
+
+  footer p {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2.8rem;
+    color: #272a31;
+    margin-bottom: 1rem;
+  }
+
+  .header-body p {
+    width: 70%;
+  }
+
+  .header-body h1 {
+    font-size: 6rem;
+    font-weight: 900;
+    line-height: 6.5rem;
+  }
+
+  .header-body h3 {
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    color: #ec5242;
+  }
+
+  #hamburger {
+    display: none;
+  }
+
+  .menu-container {
+    display: none;
+  }
+
+  .topbar {
+    display: block;
+    padding: 0 13%;
+    background-color: #3b3e45;
+  }
+
+  .topbar ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+  }
+
+  .main-program a {
+    color: #fff;
+    text-decoration: underline;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .teams a {
+    display: none;
+  }
+
+  .topbar ul li a {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-decoration: none;
+  }
+
+  .topbar ul li {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+  }
+
+  footer img {
+    height: 5.1rem;
+  }
+
+  .partner-list img {
+    height: 10rem;
+  }
+
+  .topbar ul li img {
+    height: 1.8rem;
+  }
+
+  nav {
+    overflow: hidden;
+  }
+
+  nav .logo {
+    position: static;
+    display: none;
+  }
+
+  .menu-desktop {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.35rem 14%;
+    background-color: #fff;
+  }
+
+  .menu-desktop ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    column-gap: 4rem;
+    flex-shrink: 2;
+  }
+
+  .menu-desktop ul li a {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #868686;
+    text-decoration: none;
+  }
+
+  .menu-desktop ul li {
+    padding: 1.4rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .menu-desktop ul li:nth-child(6) {
+    border: 0.4rem solid #ec4327;
+  }
+
+  .menu-desktop ul li:nth-child(6) a {
+    color: #ec4327;
+  }
+
+  .menu-desktop ul li:nth-child(1) a {
+    color: #ec4327;
+  }
+
+  .menu-desktop .logo-desktop {
+    height: 5.1rem;
+  }
+
+  .modules-container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.5rem;
+    justify-content: center;
+  }
+
+  .modules {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+  }
+
+  .modules:hover {
+    border: 0.2rem solid #fff;
+  }
+
+  .modules p {
+    text-align: center;
+  }
+
+  .main-program {
+    padding: 0 14% 2rem 14%;
+  }
+
+  .teams {
+    padding: 0 14%;
+  }
+
+  .teamAllContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    justify-content: center;
+  }
+
+  .team {
+    flex-basis: 45%;
+  }
+
+  .partners {
+    background-color: #414246;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 14%;
+  }
+
+  .partner-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5.5rem;
+  }
+
+  .partners h2 {
+    color: #fff;
+    font-weight: 700;
+    line-height: 2.8rem;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .partners hr {
+    border: 0.1rem solid #ec5242;
+    width: 3.5rem;
+    margin-bottom: 3rem;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 4.7rem 14%;
+    align-items: center;
+    column-gap: 8rem;
+  }
+}
