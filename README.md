@@ -4,7 +4,10 @@
   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
   <img src="./assets/images/ecomdev.png" alt="logo" width="140"  height="auto" />
   <br/>
-
+  <br/>
+  
+![screencapture-cool-cassata-13d577-netlify-app-2023-10-27-18_04_49](https://github.com/AjroudiRida/capstone-project-freelance/assets/114816909/c58f0bf2-25cd-4885-a90f-972804773dfe)
+<br/>
   <h3><b>EcomDev: Empowering E-commerce Solutions</b></h3>
 
 </div>
