@@ -52,7 +52,7 @@
 
 
 
-- [Live Demo Link](https://ajroudirida.github.io/capstone-project-freelance/)
+- [Live Demo Link](https://cool-cassata-13d577.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
